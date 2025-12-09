@@ -12,7 +12,6 @@
   "dependencies": {
     "react": "18.3.1",
     "react-native": "0.77.3",
-    "react-native-video": "^6.18.0",
     "react-native-webview": "^13.16.0"
   },
   "devDependencies": {

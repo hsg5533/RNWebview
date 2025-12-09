@@ -10,9 +10,7 @@ import React, {useCallback, useEffect, useRef, useState} from 'react';
 import {
   Alert,
   BackHandler,
-  Keyboard,
   NativeModules,
-  Platform,
   SafeAreaView,
   StatusBar,
   useColorScheme,
@@ -51,18 +49,6 @@ function App(): React.JSX.Element {
       console.warn('invalid message from webview', e);
     }
   }, []);
-
-  // useEffect(() => {
-  //   if (Platform.OS === 'android') {
-  //     KeyboardMode?.setAdjustNothing();
-  //   }
-  //   return () => {
-  //     if (Platform.OS === 'android') {
-  //       KeyboardMode?.setAdjustResize(); // 원래 정책으로
-  //     }
-  //   };
-  // }, []);
-
   useEffect(() => {
     const backHandler = BackHandler.addEventListener(
       'hardwareBackPress',
