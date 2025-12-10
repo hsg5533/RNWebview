@@ -84,6 +84,9 @@ function App(): React.JSX.Element {
         userAgent={
           'Mozilla/5.0 (Linux; Android 10; SM-G973N Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Mobile Safari/537.36'
         }
+        allowsInlineMediaPlayback={true}
+        mediaPlaybackRequiresUserAction={false}
+        javaScriptCanOpenWindowsAutomatically={false}
         cacheEnabled={false}
         onMessage={handleMessage}
         setSupportMultipleWindows={false}
